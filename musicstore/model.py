@@ -62,6 +62,17 @@ class Disc:
         "
 
 
+class MusicStore:
+    def __init__(self):
+        self.discs: dict[str, Disc] = {}
+
+    def add_disc(self, sid: str, title: str, artist: str, sale_price: float, purchase_price: float, quantity: int):
+        if sid 
+
+
+
+
+
 
     
         
