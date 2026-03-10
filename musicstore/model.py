@@ -44,10 +44,15 @@ class Disc:
         self.transactions.append(transaction)
 
     def copies_sold(self) -> int:
-        if len(self.transactions) == 0:
-            return 0
+        total_sold = 0
 
-        
+        for transaction in self.transactions:
+            if transaction.type == Transaction.SELL:
+                total_sold += transaction.copies
+
+        return total_sold
+
+
 
     
         
