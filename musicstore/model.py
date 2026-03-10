@@ -43,6 +43,15 @@ class Disc:
         transaction = Transaction(Transaction.SUPPLY, copies)
         self.transactions.append(transaction)
 
+    def copies_sold(self) -> int:
+        if len(self.transactions) == 0:
+            return 0
+
+        
+
+    
+        
+
     
 
     
