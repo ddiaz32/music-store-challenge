@@ -52,6 +52,15 @@ class Disc:
 
         return total_sold
 
+    def __str__(self):
+        song_list = ", ".join(self.song_list)
+        return f"
+        SID: {self.sid}
+        Title: {self.title}
+        Artist: {self.artist}
+        Song List: {song_list}
+        "
+
 
 
     
