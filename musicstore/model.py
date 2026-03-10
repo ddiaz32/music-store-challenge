@@ -38,6 +38,13 @@ class Disc:
         self.transactions.append(transaction)
         return True 
 
+    def supply(self, copies: int):
+        self.quantity += copies
+        transaction = Transaction(Transaction.SUPPLY, copies)
+        self.transactions.append(transaction)
+
+    
+
     
 
     
