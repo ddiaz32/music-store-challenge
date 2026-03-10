@@ -27,7 +27,26 @@ class Disc:
 
         if song not in self.song_list:
             self.song_list.append(song)
-            
+
+    def sell(self, copies: int) -> bool:
+        if copies > self.quantity:
+            return False
+        
+        self.quantity -= copies
+
+        transaction = Transaction(Transaction.SELL, copies)
+        self.transactions.append(transaction)
+        return True 
+
+    
+
+    
+
+
+
+
+
+
 
         
 
